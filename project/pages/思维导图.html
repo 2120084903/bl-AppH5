@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#0376f7">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>白鹿数据</title>
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="icon" href="../img/favicon.icon">
+    <link rel="stylesheet" href="../js/jsMind/jsmind.css">
+    <!--rem自适应-->
+    <script src="../js/flexible.js"></script>
+</head>
+<body>
+<div id="app" class="BL-zk">
+    <div class="view view-main view-init ios-edges" data-url="/">
+        <div class="page" data-name="index">
+            <div class="page-content">
+                <!--内容区-->
+                <div class="mainBox jsMindBg">
+                    <div id="mindBox">
+                        <div class="loading">
+                            <div class="cssload-container">
+                                <div class="cssload-lt"></div>
+                                <div class="cssload-rt"></div>
+                                <div class="cssload-lb"></div>
+                                <div class="cssload-rb"></div>
+                            </div>
+                        </div>
+                        <div class="swdtBox hide" id="swdtBox">
+                            <div id="jsmind_container" class="panzoom"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--内容区-->
+                <div class="mindTool">
+                    <ul>
+                        <li class="resetBtn"><a href="javascript:;"><i class="iconfont icon-zhongzhi1"></i>重置</a></li>
+                        <li class="closeMind"><a href="javascript:;"><i class="iconfont icon-guanbi3"></i>退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--浮动内容-->
+<!--/浮动内容-->
+<!--JavaScript引用-->
+<script src="../js/jquery-1.8.0.min.js"></script>
+<!--<script src="../../dist/js/framework7.js"></script>-->
+<script src="../js/app.js"></script>
+<script src="../js/my-app.js"></script>
+<script src="../js/jquery.color.js"></script>
+
+<script src="../js/jsMind/jsmind.js"></script>
+<script src="../js/jsMind/jsmind.draggable.js"></script>
+<script src="../js/jsMind/jsmind.screenshot.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
+<script src="../js/jsMind/jquery.panzoom.js"></script>
+<script src="../js/jsMind/jquery.mousewheel.js"></script>
+
+
+<!--思维导图-->
+<script type="text/javascript">
+
+    // 绑定阻止下拉事件
+    document.addEventListener('touchmove', handler, false);
+
+    // 阻止浏览器下拉事件
+    function handler() {
+        event.preventDefault();
+    };
+
+    var _jm = null;
+
+    function load_jsmind() {
+        var mind = {
+            "meta": {
+                "name": "demo",
+                "author": "hizzgdev@163.com",
+                "version": "0.2",
+            },
+            "format": "node_tree",
+            "data": {
+                "id": "root", "isroot": true, "topic": "<a href='http://www.baidu.com'>网络预约出租汽车经营服务管理办法</a>", "linkurl": "http://data.bailuzhiku.com", "children": [
+
+                    {
+                        "id": "sub4", "parentid": "root", "topic": "白鹿晓政", "direction": "left", "background-color": "#2DADFB", "children": [
+                            {"id": "sub41", "parentid": "sub4", "topic": "首次从国家法规层面明确了网约车的合法地位", "background-color": "#2DADFB"}
+                        ]
+                    },
+
+
+                    {
+                        "id": "sub5", "parentid": "root", "topic": "解读", "direction": "left", "background-color": "#2DCEDE", "children": [
+                            {"id": "sub51", "parentid": "sub5", "topic": "解读：《网络预约出租汽车经营服务管理暂行办法》", "background-color": "#2DCEDE"},
+                            {"id": "sub52", "parentid": "sub5", "topic": "交通运输部介绍关于网络预约出租汽车经营服务管理暂行办法等内容", "background-color": "#2DCEDE"},
+                            {"id": "sub53", "parentid": "sub5", "topic": "专家：", "background-color": "#2DCEDE"}
+                        ]
+                    },
+
+                    {
+                        "id": "sub6", "parentid": "root", "topic": "发文机关", "direction": "left", "background-color": "#9D96F5", "children": [
+                            {"id": "sub61", "parentid": "sub6", "topic": "交通部", "background-color": "#9D96F5"},
+                            {"id": "sub62", "parentid": "sub6", "topic": "工信部", "background-color": "#9D96F5"},
+                            {"id": "sub63", "parentid": "sub6", "topic": "公安部", "background-color": "#9D96F5"},
+                            {"id": "sub64", "parentid": "sub6", "topic": "网信办", "background-color": "#9D96F5"},
+                            {"id": "sub65", "parentid": "sub6", "topic": "工商总局", "background-color": "#9D96F5"},
+                            {"id": "sub66", "parentid": "sub6", "topic": "质检总局", "background-color": "#9D96F5"}
+                        ]
+                    },
+
+                    {
+                        "id": "sub1", "parentid": "root", "topic": "政策脉络", "direction": "right", "background-color": "#FB7293", "children": [
+                            {"id": "sub11", "parentid": "sub1", "topic": "交通运输部关于规范发展出租汽车电召服务的通知", "background-color": "#FB7293"},
+                            {"id": "sub12", "parentid": "sub1", "topic": "交通运输部关于《出租汽车经营服务管理规定》（征求意见稿）公开征求意见的通知", "background-color": "#FB7293"},
+                            {"id": "sub13", "parentid": "sub1", "topic": "交通运输部关于征求《关于促进手机软件召车等出租汽车电召服务有序发展的通知（征求意见稿）意见的通知》", "background-color": "#FB7293"},
+                            {"id": "sub14", "parentid": "sub1", "topic": "交通运输部关于深化出租汽车行业改革指导意见等有关文件公开征求意见的通知", "background-color": "#FB7293"},
+                            {"id": "sub15", "parentid": "sub1", "topic": "国务院办公厅关于深化改革推进出租汽车行业健康发展的指导意见", "background-color": "#FB7293"},
+                            {"id": "sub16", "parentid": "sub1", "topic": "交通运输部关于发布《网路预约出租汽车运营服务规范》", "background-color": "#FB7293"}
+                        ]
+                    },
+
+                    {
+                        "id": "sub2", "parentid": "root", "topic": "媒体报道", "direction": "right", "background-color": "#2DADFB", "children": [
+                            {"id": "sub21", "parentid": "sub2", "topic": "网约车经营服务管理暂行办法出台，九大看点解读", "background-color": "#2DADFB"}
+                        ]
+                    },
+
+                    {
+                        "id": "sub3", "parentid": "root", "topic": "同期行业动态", "direction": "right", "background-color": "#2DCEDE", "children": [
+                            {"id": "sub31", "parentid": "sub3", "topic": "滴滴约谈", "background-color": "#2DCEDE"},
+                            {"id": "sub32", "parentid": "sub3", "topic": "交通部回应“打车难”的问题：不能用非法经营来缓解", "background-color": "#2DCEDE"},
+                            {"id": "sub33", "parentid": "sub3", "topic": "滴滴获长沙网约车牌照，一周连开四城", "background-color": "#2DCEDE"}
+                        ]
+                    },
+                ]
+            },
+        };
+        var options = {
+            container: 'jsmind_container',
+            editable: false,
+            theme: 'primary'
+        }
+        _jm = jsMind.show(options, mind);
+    }
+
+    // load_jsmind();
+
+    var zoomInButton = document.getElementById("zoom-in-button");
+    var zoomOutButton = document.getElementById("zoom-out-button");
+
+    function zoomIn() {
+        if (_jm.view.zoomIn()) {
+            zoomOutButton.disabled = false;
+        } else {
+            zoomInButton.disabled = true;
+        }
+        ;
+    };
+
+    function zoomOut() {
+        if (_jm.view.zoomOut()) {
+            zoomInButton.disabled = false;
+        } else {
+            zoomOutButton.disabled = true;
+        }
+        ;
+    };
+</script>
+
+<!--水平居中-->
+<script>
+    function Middle() {
+        var mindWidthBox = $('#jsmind_container .theme-primary').width() / 2;
+        var mindHeightBox = $('#jsmind_container .theme-primary').height() / 2;
+
+        $('#jsmind_container').css({
+            'margin-left': -mindWidthBox + 'px',
+            'margin-top': -mindHeightBox + 'px'
+        });
+    };
+
+    // loading
+    setTimeout(function () {
+        $('.swdtBox').removeClass('hide');
+        load_jsmind();
+        Middle();
+        $('.loading').addClass('hide');
+    }, 3000);
+</script>
+
+<!--平移-->
+<script type="text/javascript">
+    var _x_start, _y_start, _x_move, _y_move, _x_end, _y_end, left_start, top_start;
+    document.getElementById("swdtBox").addEventListener("touchstart", function (e) {
+        _x_start = e.touches[0].pageX;
+        _y_start = e.touches[0].pageY;
+        // console.log("start",_x_start)
+        left_start = $("#jsmind_container").css("left");
+        top_start = $("#jsmind_container").css("top");
+    });
+    document.getElementById("swdtBox").addEventListener("touchmove", function (e) {
+        _x_move = e.touches[0].pageX;
+        _y_move = e.touches[0].pageY;
+        // console.log("move",_x_move)
+        $("#jsmind_container").css("left", parseFloat(_x_move) - parseFloat(_x_start) + parseFloat(left_start) + "px");
+        $("#jsmind_container").css("top", parseFloat(_y_move) - parseFloat(_y_start) + parseFloat(top_start) + "px");
+        console.log(parseFloat(_y_move) - parseFloat(_y_start) + parseFloat(top_start));
+    });
+    document.getElementById("swdtBox").addEventListener("touchend", function (e) {
+        var _x_end = e.changedTouches[0].pageX;
+        var _y_end = e.changedTouches[0].pageY;
+        // console.log("end",_x_end)
+    });
+</script>
+
+<!--缩放-->
+<script>
+    (function () {
+
+        var $section = $('#mindBox');
+        var $panzoom = $section.find('.panzoom').panzoom();
+        $panzoom.parent().on('mousewheel.focal', function (e) {
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('zoom', zoomOut, {
+                increment: 0.1,
+                animate: true,
+                focal: e
+            });
+        });
+
+    })();
+
+    // 重置
+    $('.resetBtn').click(function () {
+        $('#jsmind_container').animate({
+            'left': '50%',
+            'top': '50%'
+        }).css({
+            'transform': 'none'
+        })
+    });
+
+    // 退出
+    $('.closeMind').click(function () {
+
+        // 其他浏览器关闭页面
+        var userAgent = navigator.userAgent;
+        if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Chrome") != -1) {
+            window.location.href = "about:blank";
+        } else if (userAgent.indexOf('Android') > -1 || userAgent.indexOf('Linux') > -1) {
+            window.opener = null;
+            window.open('about:blank', '_self', '').close();
+        } else {
+            window.opener = null;
+            window.open("about:blank", "_self");
+            window.close();
+        }
+    });
+
+
+
+</script>
+</body>
+
+</html>

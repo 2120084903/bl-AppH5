@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#0376f7">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>白鹿数据</title>
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="icon" href="../img/favicon.icon">
+    <!--rem自适应-->
+    <script src="../js/flexible.js"></script>
+
+</head>
+<body>
+<div id="app" class="BL-zk">
+    <div class="view view-main view-init ios-edges" data-url="/">
+        <div class="page" data-name="index">
+            <div class="page-content">
+                <!--内容区-->
+                <div class="mainBox">
+                    <div class="policy-box">
+                        <div class="newsTitleBox">
+                            <h1>互联网医疗与传统医院如何更好兼容？看权威解读</h1>
+                            <div class="Signature">
+                                <ul>
+                                    <li>
+                                        <span></span>
+                                        <span>2018-09-15</span>
+                                    </li>
+                                    <li>
+                                        <span>来源:</span>
+                                        <span>新华网</span>
+                                    </li>
+                                    <li>
+                                        <span>作者:</span>
+                                        <span>新华网</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                       <div class="con">
+                           <p>
+                               新华社北京9月16日电 近日，中共中央办公厅、国务院办公厅印发了《防范和惩治统计造假、弄虚作假督察工作规定》，并发出通知，要求各地区各部门认真遵照执行。
+                           </p>
+                           <img src="../img/newsImg01.jpg" alt="白鹿数据">
+                           <p>  《防范和惩治统计造假、弄虚作假督察工作规定》全文如下。</p>
+                           <p>
+                               第一条　为了构建防范和惩治统计造假、弄虚作假督察机制，推动各地区各部门严格执行统计法律法规，确保统计数据真实准确，根据《关于深化统计管理体制改革提高统计数据真实性的意见》、《统计违纪违法责任人处分处理建议办法》等有关规定和《中华人民共和国统计法》、《</p>
+                           <p>
+                               第二条　统计督察必须坚持以习近平新时代中国特色社会主义思想为指导，全面贯彻党的十九大和十九届二中、三中全会精神，牢固树立政治意识、大局意识、核心意识、看齐意识，坚持和加强党的全面领导，坚持稳中求进工作总基调，坚持新发展理念，紧扣我国社会主要矛盾变化，按照高质量发展的要求，围绕统筹推进“五位一体”总体布局和协调推进“四个全面”战略布局，聚焦统计法定职责履行、统计违纪违法现象治理、统计数据质量提升，注重实效、突出重点、发现问题、严明纪律，维护统计法律法规权威，推动统计改革发展，为经济社会发展做好统计制度保障。
+                           </p>
+                           <p>
+                               第三条　根据党中央、国务院授权，国家统计局组织开展统计督察，监督检查各地区各部门贯彻执行党中央、国务院关于统计工作的决策部署和要求、统计法律法规、国家统计政令等情况。
+                           </p>
+                           <p>
+                               国家统计局通过组建统计督察组开展统计督察工作，统计督察组设组长、副组长，实行组长负责制，副组长协助组长开展工作。
+                           </p>
+                       </div>
+                    </div>
+                </div>
+                <!--内容区-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--浮动内容-->
+<!--/浮动内容-->
+<!--JavaScript引用-->
+<script src="../js/jquery-1.8.0.min.js"></script>
+<script src="../../dist/js/framework7.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/my-app.js"></script>
+<script src="../js/jquery.color.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2.5,
+        spaceBetween: 0,
+        // init: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: false,
+        }
+    });
+</script>
+<script>
+    //判断搜索框焦点--获取焦点点亮搜索图标，失去焦点熄灭图标
+    $(function () {
+        $('.searchInput .inputBox input').focus(function () {
+            $('.searchInput .inputBox i').addClass('active');
+        });
+        $('.searchInput .inputBox input').blur(function () {
+            $('.searchInput .inputBox i').removeClass('active');
+        });
+    })
+</script>
+
+</body>
+
+</html>
